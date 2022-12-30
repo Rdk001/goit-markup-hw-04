@@ -144,41 +144,15 @@ body {
   text-decoration: none;
 }
 
-.icon-header {
-  padding: 0;
-  border-radius: 50%;
-}
-
 /* герой */
 
 .hero {
+  background-color: var(--dark-bg-color);
   color: var(--white-bg-color);
 
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-}
-
-.icon {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero-bg {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .hero-title {
