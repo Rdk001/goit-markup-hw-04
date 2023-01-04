@@ -552,6 +552,10 @@ body {
   margin-left: 10px;
 }
 
+.images {
+  display: block;
+}
+
 /* Портфолио */
 
 .visually-hidden {
