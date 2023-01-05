@@ -41,6 +41,10 @@ body {
   padding-top: 0;
 }
 
+:focus {
+  outline: none;
+}
+
 /* Навигація */
 
 .header {
@@ -363,11 +367,13 @@ body {
   margin-right: auto;
 }
 
-.networks:hover {
+.networks:hover,
+.networks:focus {
   background: var(--blue-bg-color);
 }
 
-.networks:hover .icon-our-team {
+.networks:hover .icon-our-team,
+.networks:focus .icon-our-team {
   fill: var(--white-bg-color);
 }
 
@@ -416,6 +422,8 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .clients .item + .item {
@@ -431,8 +439,14 @@ body {
   border-radius: 4px;
 }
 
-.clients-icon-box:hover {
+.clients-icon-box:hover,
+.clients-icon-box:focus {
   border: 1px solid var(--blue-bg-color);
+}
+
+.clients-icon-box:hover .icon-clients,
+.clients-icon-box:focus .icon-clients {
+  fill: var(--blue-bg-color);
 }
 
 /* Футер */
@@ -496,7 +510,8 @@ body {
   margin-right: auto;
 }
 
-.icon-container:hover {
+.icon-container:hover,
+.icon-container:focus {
   background: var(--blue-bg-color);
 }
 
@@ -622,6 +637,8 @@ body {
 .button.secondary:focus {
   background-color: var(--blue-bg-color);
   color: var(--white-bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*  */
@@ -641,11 +658,6 @@ body {
 .item.project:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.item.btn:hover {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list-portfolio .item {
